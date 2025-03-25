@@ -1,0 +1,123 @@
+body{
+    background-color: color-mix(in srgb, blue 30%, pink 70%);
+}
+
+.heading{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: blanchedalmond;
+    background-color: red;
+    margin-left: 20% ;
+    margin-right: 20%;
+}
+
+.text{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    color: black;
+    background-color: orange;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.container{
+    background-color: aqua;
+    width: 360px;
+    padding: 35px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 15px 30px 35px rgba(207, 25, 25, 0.1);
+    border-radius: 30px;
+}
+
+.score{
+    display: flex;
+    justify-content: space-between;
+    color: #feffff;
+    font-size: larger;
+    font-weight: 600;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0, 23, 1, 0.5);
+    background-color: fuchsia;
+
+}
+
+.score p:nth-last-child(1){
+    margin-left: 50%;
+}
+
+.coin{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin: 32px auto;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    }
+
+#coins{
+    width: 160px;
+    background-color: black;
+    color: black;
+}
+
+.heads,.tails{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.tails{
+    transform: rotateX(180deg);
+}
+
+@keyframes spin-tails{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+@keyframes spin-heads{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    width: 120px;
+    padding: 20px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#flip-button{
+    background-color: yellow;
+    color: red;
+    font-size: x-large;
+    font-weight: 750;
+}
+
+#reset-button{
+    background-color: yellow;
+    color: red;
+    font-size: x-large;
+    font-weight: 750;
+}
